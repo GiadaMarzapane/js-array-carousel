@@ -33,8 +33,19 @@ main{
     border-radius: 50%;
 }
 
+.hidden{
+    display: none;
+}
+
 #next{
     right: 10px;
+}
+
+#next:hover,
+#previous:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 #previous{
