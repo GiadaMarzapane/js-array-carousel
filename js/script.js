@@ -6,14 +6,18 @@ const myImgs = [
 'img/05.webp'];
 console.log(myImgs);
 
-const myContainerCarousel = document.querySelector('.slide');
+const myContainerCarousel = document.querySelector('.carousel');
 
 for (let index = 0; index < myImgs.length; index++) {
-    console.log(myImgs[index]);
+    console.log(index);
 
-    const img = myContainerCarousel.innerHTML += `<img src="${myImgs[index]}"=>`;
+    const imgCurrent = myContainerCarousel.innerHTML += `<div class="slide">
+                                                            <img src="${myImgs[index]}"=>
+                                                        </div>`;
+    console.log(imgCurrent);
     
-    if (myImgs[index] != 0) {
-        img.classList.add = ('hidden');
-    }
+    const allSlides = document.querySelectorAll('.slide');
+
+    allSlides[0].classList.add("block");
+    
 }
