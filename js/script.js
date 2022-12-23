@@ -14,9 +14,9 @@ for (let index = 0; index < myImgs.length; index++) {
     const img = myContainerCarousel.innerHTML += `<img src="${myImgs[index]}"=>`;
     
     if (myImgs[index] == 0) {
-        img.classList.add('block');
+        img.classList.add = ('block');
     }
     else{
-        img.classList.add('hidden');
+        img.classList.add = ('hidden');
     }
 }
