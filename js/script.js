@@ -11,5 +11,12 @@ const myContainerCarousel = document.querySelector('.slide');
 for (let index = 0; index < myImgs.length; index++) {
     console.log(myImgs[index]);
 
-    myContainerCarousel.innerHTML += `<img src="${myImgs[index]}"=>`;
+    const img = myContainerCarousel.innerHTML += `<img src="${myImgs[index]}"=>`;
+    
+    if (myImgs[index] == 0) {
+        img.classList.add('block');
+    }
+    else{
+        img.classList.add('hidden');
+    }
 }
